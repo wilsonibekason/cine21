@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {Feed, Footer,Header, MovieCard, Post,Tickets} from "./components"
+import {Feed, Footer,Header, MovieCard, Post,Tickets, HeaderTitle} from "./components"
 import styles from './styles'
 function App() {
   return (
@@ -9,6 +9,11 @@ function App() {
         <div className={`${styles.boxWidth}`}>
           <Header/>
         </div>
+       </div>
+       <div className={`${styles.flexCenter} ${styles.paddingX}`}>
+<div className={`${styles.boxWidth}`}>
+  <HeaderTitle/>
+</div>
        </div>
        {/** header */}
        <div className={`${styles.boxWidth}`}>
