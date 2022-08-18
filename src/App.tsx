@@ -38,7 +38,7 @@ function App() {
             }
           />
         </div>
-        <div className={`${styles.paddingX} bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.paddingX} bg_black ${styles.flexStart}`}>
           <Footer />
         </div>
       </div>
