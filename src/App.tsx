@@ -3,8 +3,8 @@ import {Feed, Footer,Header, MovieCard, Post,Tickets} from "./components"
 function App() {
   return (
   <>
-  <div>
-
+  <div className='bg-primary w-full overflow-hidden'>
+       
   </div>
   </>
   )
