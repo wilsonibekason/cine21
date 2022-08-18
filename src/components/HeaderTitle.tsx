@@ -15,9 +15,6 @@ const HeaderLink = () => {
         </div>
         {/** centered Heading */}
       </div>
-      <div className={` `}>
-        <h4 className={`${styles.heading1} text-center`}>new movie</h4>
-      </div>
     </>
   );
 };
