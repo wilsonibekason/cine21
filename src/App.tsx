@@ -4,9 +4,9 @@ import {
   Footer,
   Header,
   MovieCard,
-  Post,
   Tickets,
   HeaderTitle,
+  Posts,
 } from "./components";
 import styles from "./styles";
 function App() {
@@ -25,7 +25,7 @@ function App() {
         </div>
         {/** header */}
         <div className={`${styles.boxWidth}`}>
-          <Feed />
+          <Posts />
         </div>
         <div className={`${styles.paddingX} bg-primary ${styles.flexStart}`}>
           <Tickets />
