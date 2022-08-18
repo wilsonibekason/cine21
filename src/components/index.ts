@@ -6,3 +6,4 @@ export { default as Posts } from "./Posts";
 export { default as Tickets } from "./Tickets";
 export { default as HeaderTitle } from "./HeaderTitle";
 export { default as CarouselImage } from "./CarouselImage";
+export { default as CustomeCard } from "./CustomeCard";

@@ -7,6 +7,7 @@ import {
   Tickets,
   HeaderTitle,
   Posts,
+  CustomeCard,
 } from "./components";
 import styles from "./styles";
 function App() {
@@ -29,6 +30,9 @@ function App() {
         </div>
         <div className={`my-8 mx-32`}>
           <Tickets />
+        </div>
+        <div className={`my-4 mx-16 bg_black`}>
+          <CustomeCard message={"hello "} />
         </div>
         <div className={`${styles.paddingX} bg-primary ${styles.flexStart}`}>
           <Footer />
