@@ -9,7 +9,7 @@ const Posts = () => {
         className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16  mx-8 lg:mx-24 min-h-[100vh] gap-8`}
       >
         <div className="relative flex flex-col shadow-lg w-full">
-          <img src={beast} alt="img-card" className=" object-contain " />
+          <img src={beast} alt="img-card" className=" object-cover" />
           <div className="my-4 w-full mx-4">
             <h2 className={`${styles.cardHeading} `}>Captain America</h2>
             <p className={`${styles.span1} mt-4`}>

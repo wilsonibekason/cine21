@@ -27,8 +27,10 @@ function App() {
         <div className={`${styles.boxWidth}`}>
           <Posts />
         </div>
-        <div className={`${styles.paddingX} bg-primary ${styles.flexStart}`}>
+        <div className={`my-8 mx-32`}>
           <Tickets />
+        </div>
+        <div className={`${styles.paddingX} bg-primary ${styles.flexStart}`}>
           <Footer />
         </div>
       </div>
