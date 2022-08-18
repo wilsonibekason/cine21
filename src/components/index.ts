@@ -5,3 +5,4 @@ export { default as MovieCard } from "./MovieCard";
 export { default as Post } from "./Post";
 export { default as Tickets } from "./Tickets";
 export { default as HeaderTitle } from "./HeaderTitle";
+export { default as CarouselImage } from "./CarouselImage";
