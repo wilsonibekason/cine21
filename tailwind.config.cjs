@@ -4,6 +4,10 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/img/hero-pattern.svg')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",

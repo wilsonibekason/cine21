@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import { beast, cold } from "../assets";
 
 const CarouselImage = () => {
   return (
-    <div>CarouselImage</div>
-  )
-}
+    <>
+      <div
+        className="absolute top-0 w-full h-full bg-center bg-cover"
+        style={{
+          backgroundImage: `url('${cold}')`,
+        }}
+      >
+        <span
+          id="blackOverlay"
+          className="w-full h-full absolute opacity-75 bg-black"
+        ></span>
+      </div>
+    </>
+  );
+};
 
-export default CarouselImage
+export default CarouselImage;

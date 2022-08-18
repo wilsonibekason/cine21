@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { beast } from "./assets";
 import {
   Feed,
   Footer,
@@ -8,6 +9,7 @@ import {
   HeaderTitle,
   Posts,
   CustomeCard,
+  CarouselImage,
 } from "./components";
 import styles from "./styles";
 function App() {
@@ -18,6 +20,10 @@ function App() {
           <div className={`${styles.boxWidth}`}>
             <Header />
           </div>
+        </div>
+
+        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-60px)]">
+          <CarouselImage />
         </div>
         <div className={`${styles.flexCenter} ${styles.paddingX}`}>
           <div className={`${styles.boxWidth}`}>
