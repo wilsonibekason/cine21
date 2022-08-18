@@ -21,7 +21,7 @@ const Tickets = () => {
             </div>
           </div> */}
           <div
-            className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 mt-16  mx-4 lg:mx-12 min-h-[100vh] gap-8`}
+            className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 mt-16  mx-4 lg:mx-12  gap-8`}
           >
             <div className="col-span-1 lg:col-span-4">
               <div className="relative flex flex-col shadow-sm w-full">
