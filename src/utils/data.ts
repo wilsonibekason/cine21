@@ -1,6 +1,8 @@
+import { beast } from "../assets";
+
 export const cineMovie = [
   {
-    img: "",
+    img: beast,
     title: "",
     description: "",
     showtime: "",
@@ -9,5 +11,11 @@ export const cineMovie = [
     genre: [],
     cast: [],
     director: "",
+  },
+];
+export const navLinks = [
+  {
+    id: 1,
+    title: "contactus",
   },
 ];
