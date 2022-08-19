@@ -6,7 +6,7 @@ const CustomeCard = () => {
     <>
       <div className="w-full ">
         <h1 className={`${styles.cardHeading}`}>
-          "Customer Careline: 09150391829 | Advert/Marketing: 08028348929 "
+          Customer Careline: 09150391829 | Advert/Marketing: 08028348929
         </h1>
       </div>
     </>
