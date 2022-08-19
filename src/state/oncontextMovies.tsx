@@ -14,6 +14,7 @@ const contextDefaultValues: TodosContextState = {
   addTodo: () => {},
   currentIndex: 0,
   count: 0,
+  slideRef: null,
 };
 
 export const TodosContext =
@@ -53,6 +54,8 @@ const TodosProvider = ({ children }: slideProviderProps) => {
         todos,
         addTodo,
         count,
+        currentIndex,
+        slideRef,
       }}
     >
       {children}

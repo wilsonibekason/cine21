@@ -3,6 +3,7 @@ export type TodosContextState = {
   addTodo: (name: string) => void;
   currentIndex?: number | undefined;
   count: number;
+  slideRef: null | object;
 };
 export interface slideProviderProps {
   children: React.ReactNode;
