@@ -8,3 +8,6 @@ export type TodosContextState = {
 export interface slideProviderProps {
   children: React.ReactNode;
 }
+interface ClassAttributes<T> extends Attributes {
+  slideRef?: LegacyRef<T> | undefined;
+}
