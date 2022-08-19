@@ -6,8 +6,8 @@ import TodosProvider from "./state/oncontextMovies";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <TodosProvider>
-      <App />
-    </TodosProvider>
+    {/* <TodosProvider> */}
+    <App />
+    {/* </TodosProvider> */}
   </React.StrictMode>
 );

@@ -1,17 +1,18 @@
 import React from "react";
 import { beast, cold } from "../assets";
-import { useContextMovies } from "../state/oncontextMovies";
+// import { useContextMovies } from "../state/oncontextMovies";
 import { carouselAsset } from "../utils/data";
 const CarouselImage = () => {
-  const { count, currentIndex, slideRef } = useContextMovies();
+  // const { count, currentIndex, slideRef } = useContextMovies();
   return (
     <>
       <div
         className="absolute top-0 w-full h-full bg-center bg-cover"
         style={{
-          backgroundImage: `url('${carouselAsset[currentIndex]}')`,
+          // backgroundImage: `url('${carouselAsset[currentIndex]}')`,
+          backgroundImage: `url('${beast}')`,
         }}
-        ref={slideRef}
+        // ref={slideRef}
       >
         <span
           id="blackOverlay"
