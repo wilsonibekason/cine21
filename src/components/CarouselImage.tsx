@@ -8,6 +8,7 @@ const CarouselImage = () => {
         className="absolute top-0 w-full h-full bg-center bg-cover"
         style={{
           backgroundImage: `url('${cold}')`,
+          on,
         }}
       >
         <span
