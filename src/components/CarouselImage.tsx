@@ -1,7 +1,8 @@
 import React from "react";
 import { beast, cold } from "../assets";
-
+import { useMovieContext } from "../state";
 const CarouselImage = () => {
+  const { index, slideRef } = use;
   return (
     <>
       <div
