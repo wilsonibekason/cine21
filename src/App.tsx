@@ -38,11 +38,7 @@ function App() {
           <Tickets />
         </div>
         <div className={`my-4 mx-16 bg_black p-10 rounded-lg`}>
-          <CustomeCard
-            message={
-              "Customer Careline: 09150391829 | Advert/Marketing: 08028348929 "
-            }
-          />
+          <CustomeCard />
         </div>
         <div className={`${styles.paddingX} bg_black ${styles.flexStart}`}>
           <Footer />

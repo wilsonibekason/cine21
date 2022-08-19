@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "../styles";
 
-const CustomeCard = ({ message }) => {
+const CustomeCard = () => {
   return (
     <>
       <div className="w-full ">
-        <h1 className={`${styles.cardHeading}`}>{message}</h1>
+        <h1 className={`${styles.cardHeading}`}>
+          "Customer Careline: 09150391829 | Advert/Marketing: 08028348929 "
+        </h1>
       </div>
     </>
   );
