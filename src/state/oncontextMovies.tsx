@@ -33,14 +33,17 @@ const TodosProvider = ({ children }: slideProviderProps) => {
 
   useEffect(() => {
     slideRef.current?.addEventListener("animationend", removeAnimation);
+    slideRef?.current?.addEventListener("mouseenter", endSlider);
+    slideRef?.current?.addEventListener("mouseleave", startSlider);
     startSlider;
+    // clean up function
+    return () => endSlider();
   }, []);
 
   const removeAnimation = () =>
     slideRef.current?.classList.remove(".fade-anim");
   const startSlider = setInterval(() => {
     handleOnNext;
-    return () => endSlider();
   }, 2000);
   const endSlider = () => clearInterval(slideInterval);
   const handleOnNext = () => {
