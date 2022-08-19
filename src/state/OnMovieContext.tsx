@@ -16,9 +16,9 @@ const MovieProvider = ({ children }: slideProviderProps) => {
  
   const [index, setIndex] = useState(0);
   let slideRef = useRef<HTMLDivElement>(Object);
-  // slideCurrent: SliderState = slideRef.current;
+  // slideCurrent: Slider State = slideRef.current;
   
-  let count = 0;
+  let count: number = 0;
   let slideInterval: number | undefined;
 
   useEffect(() => {
