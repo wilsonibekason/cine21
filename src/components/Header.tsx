@@ -1,12 +1,12 @@
 import React from "react";
-import { menu } from "../assets";
+import { menu, menuSvg } from "../assets";
 import { navLinks } from "../utils/data";
 
 const Header = () => {
   const [toggle, setToggle] = React.useState(false);
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={""} alt="logo" className="w-[124px] h-[32px]" />
+      <img src={menu} alt="logo" className="w-[124px] h-[32px]" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((navLink, index) => (
           <li key={index + navLink.id} className={"font-poppins"}>

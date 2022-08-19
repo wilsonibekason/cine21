@@ -1,4 +1,4 @@
-import { beast } from "../assets";
+import { beast, cold, superpet } from "../assets";
 
 export const cineMovie = [
   {
@@ -19,3 +19,5 @@ export const navLinks = [
     title: "contactus",
   },
 ];
+
+export const carouselAsset = [beast, cold, superpet];
