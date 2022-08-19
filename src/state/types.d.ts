@@ -1,9 +1,13 @@
+export interface RefObject<T> {
+  readonly current: T | null;
+}
+
 export type TodosContextState = {
   todos: string[];
   addTodo: (name: string) => void;
-  currentIndex?: number | undefined;
+  currentIndex: number;
   count: number;
-  slideRef: null | object;
+  slideRef: object | RefObject;
 };
 export interface slideProviderProps {
   children: React.ReactNode;

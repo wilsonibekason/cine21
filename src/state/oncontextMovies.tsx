@@ -14,16 +14,15 @@ const contextDefaultValues: TodosContextState = {
   addTodo: () => {},
   currentIndex: 0,
   count: 0,
-  slideRef: null,
+  slideRef: useRef<HTMLDivElement>(null),
 };
-
 export const TodosContext =
   createContext<TodosContextState>(contextDefaultValues);
 
 const TodosProvider = ({ children }: slideProviderProps) => {
   let slideRef = useRef<HTMLDivElement>(null);
   const [todos, setTodos] = useState<string[]>(contextDefaultValues.todos);
-  const [currentIndex, setCurrentIndex] = useState<number | undefined>(
+  const [currentIndex, setCurrentIndex] = useState<number>(
     contextDefaultValues.currentIndex
   );
   let count = 0;
@@ -34,7 +33,7 @@ const TodosProvider = ({ children }: slideProviderProps) => {
   useEffect(() => {
     slideRef.current?.addEventListener("animationend", removeAnimation);
     slideRef?.current?.addEventListener("mouseenter", endSlider);
-    slideRef?.current?.addEventListener("mouseleave", startSlider);
+    // slideRef?.current?.addEventListener("mouseleave", startSlider());
     startSlider;
     // clean up function
     return () => endSlider();
@@ -43,7 +42,7 @@ const TodosProvider = ({ children }: slideProviderProps) => {
   const removeAnimation = () =>
     slideRef.current?.classList.remove(".fade-anim");
   const startSlider = setInterval(() => {
-    handleOnNext;
+    handleOnNext();
   }, 2000);
   const endSlider = () => clearInterval(slideInterval);
   const handleOnNext = () => {
