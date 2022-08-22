@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 /*raleway font family*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,200&family=Roboto+Condensed&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,200&family=Roboto+Condensed&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,200&family=Roboto+Condensed&family=Roboto:wght@700;900&display=swap');
 /*raleway font family*/
 @tailwind base;
 @tailwind components;
@@ -20,6 +20,21 @@
   --blue-palette: #468ed5;
   --red-palette:  #ce282c;
   --pink-palette:  #e59293;
+  --black-background: #000000;
+  --e-global-color-primary: #6EC1E4;
+  --e-global-color-secondary: #54595F;
+  --e-global-color-text: #7A7A7A;
+  --e-global-color-accent: #3c473e;
+  --e-global-typography-primary-font-family: "Kanit";
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Kanit";
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Kanit";
+  --e-global-typography-text-font-size: 15px;
+  --e-global-typography-text-font-weight: 300;
+  --e-global-typography-text-font-style: normal;
+  --e-global-typography-accent-font-family: "Roboto";
+  --e-global-typography-accent-font-weight: 500;
 
 
 }
@@ -29,6 +44,13 @@
 }
 /** palette collection definition*/
 /** black background color**/
+
+.black-bg-color{
+  background-color: var(--black-background);
+}
+.black-bg{
+  background: var(--black-background);
+}
 .bg_black {
   background: var(--black-gradient);
 }

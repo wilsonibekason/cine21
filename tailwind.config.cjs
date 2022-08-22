@@ -16,8 +16,9 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        raleway: ["Roboto Condensed", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
         robotoCondensed: ["Roboto Condensed", "sans-serif"],
+        robotoMain: ["Roboto", "sans-serif"],
       },
     },
     screens: {

@@ -15,16 +15,17 @@ import styles from "./styles";
 function App() {
   return (
     <>
-      <div className="bg-primary w-full overflow-hidden">
-        <div className={`${styles.flexCenter} ${styles.paddingX} bg_black`}>
+      <div className="black-bg w-full overflow-hidden">
+        <div className={`${styles.flexCenter} ${styles.paddingX} black-bg`}>
           <div className={`${styles.boxWidth}`}>
             <Header />
           </div>
         </div>
 
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-60px)]">
-          <CarouselImage />
-        </div>
+        {/* <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-60px)]"> */}
+        <CarouselImage />
+        {/* </div> */}
+
         <div className={`${styles.flexCenter} ${styles.paddingX}`}>
           <div className={`${styles.boxWidth}`}>
             <HeaderTitle />

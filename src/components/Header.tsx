@@ -1,62 +1,54 @@
 import React from "react";
-import { menuSvg } from "../assets";
-import { navLinks } from "../utils/data";
 
-const logo: string =
-  "https://i0.wp.com/cine21.ng/wp-content/uploads/2021/01/cropped-White-Horizontal-Logo-1.png?fit=1639%2C752&ssl=1";
-const menu: string =
-  "https://mpng.subpng.com/20180514/sle/kisspng-hamburger-button-computer-icons-menu-5afa4b5d6c72a7.2738325215263527334442.jpg";
-const close: string =
-  "https://www.kindpng.com/picc/m/463-4638719_close-close-button-transparent-png-png-download.png";
-const Header = () => {
-  const [toggle, setToggle] = React.useState(false);
+export default function Header() {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="logo" className="w-[124px] h-[62px]" />
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((navLink, index) => (
-          <li key={index + navLink.id} className={"font-poppins"}>
-            <a
-              href={`#${navLink.id}`}
-              className={`font-normal cursor-pointer font-poppins text-[16px]   ${
-                index === navLinks.length - 1 ? "mr-0" : "mr-10"
-              } text-indigo-500`}
+    <>
+      <nav className="relative flex flex-wrap items-center justify-between px-12 py-3  mb-3">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            {/* <a
+              className="text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              href="#pablo"
             >
-              {navLink.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-      {/** small device navbar preference */}
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="nav_logo"
-          className="w-[35px] h-[35px] object-contain"
-          onClick={() => setToggle((prev) => !prev)}
-        />
-
-        <div
-          className={`${
-            !toggle ? "hidden" : "flex"
-          }  p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px ] rounded-xl sidebar`}
-        >
-          <ul className="list-none  flex flex-col  justify-end items-center flex-1">
-            {navLinks.map((navLink, index) => (
-              <li
-                key={index + navLink.id}
-                className={`font-medium cursor-pointer font-poppins text-[16px]   ${
-                  index === navLinks.length - 1 ? "mr-0" : "mb-4"
-                } text-white`}
-              >
-                <a href={`#${navLink.id}`}>{navLink.title}</a>
+              cinema
+            </a> */}
+            <img
+              src="https://i0.wp.com/cine21.ng/wp-content/uploads/2021/01/cropped-White-Horizontal-Logo-1.png?resize=1536%2C705&ssl=1"
+              alt=""
+              className="w-32  object-contain"
+            />
+            <button
+              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setNavbarOpen(!navbarOpen)}
+            >
+              <i className="fas fa-bars"></i>
+            </button>
+          </div>
+          <div
+            className={
+              "lg:flex flex-grow items-center" +
+              (navbarOpen ? " flex " : " hidden")
+            }
+            id="example-navbar-danger"
+          >
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold font-robotoMain leading-snug text-white hover:opacity-75"
+                  href="#pablo"
+                >
+                  {/* <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75 "></i> */}
+                  <span className="ml-2 text-xs lg:text-2xl capitalize tracking-wide font-black">
+                    Contact us
+                  </span>
+                </a>
               </li>
-            ))}
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
-};
-
-export default Header;
+}
