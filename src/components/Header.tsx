@@ -32,7 +32,7 @@ export default function Header() {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold font-robotoMain leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold font-robotoMain leading-snug text-white hover:text-yellow-300 hover:border-b-4 hover:border-yellow-300 "
                   href="#pablo"
                 >
                   {/* <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75 "></i> */}
