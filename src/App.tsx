@@ -43,7 +43,7 @@ function App() {
         {/* <div className={`${styles.boxWidth}`}>
           <Posts />
         </div> */}
-        <div className={`my-12 mx-4 lg:mx-[130px]`}>
+        <div className={`my-12 mx-4 lg:mx-[120px]`}>
           <Tickets />
         </div>
         {/* <div className={`my-4 mx-4 md:mx-16 lg:mx-16 bg_black p-10 rounded-lg`}> */}
