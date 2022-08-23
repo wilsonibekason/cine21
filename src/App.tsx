@@ -50,6 +50,9 @@ function App() {
           <div className=" text-white h-26 flex-auto w-full lg:w-[25%] ">
             <PostCard />
           </div>
+          <div className=" text-white h-26 flex-auto w-full lg:w-[25%] ">
+            <PostCard />
+          </div>
         </div>
         {/* <div className={`${styles.boxWidth}`}>
           <Postss />
@@ -58,10 +61,11 @@ function App() {
         {/* <div className={`${styles.boxWidth}`}>
           <Posts />
         </div> */}
-        <div className={`my-8 mx-4 lg:mx-32`}>
+        <div className={`my-12 mx-4 lg:mx-32`}>
           <Tickets />
         </div>
-        <div className={`my-4 mx-4 md:mx-16 lg:mx-16 bg_black p-10 rounded-lg`}>
+        {/* <div className={`my-4 mx-4 md:mx-16 lg:mx-16 bg_black p-10 rounded-lg`}> */}
+        <div className="my-4 mx-4 md:mx-16 lg:mx-16">
           <CustomeCard />
         </div>
         <div className={`${styles.paddingX} bg_black ${styles.flexStart}`}>

@@ -5,7 +5,7 @@ const CustomeCard = () => {
   return (
     <>
       <div className="w-full ">
-        <h1 className={`${styles.cardHeading}`}>
+        <h1 className={`${styles.cardHeading3} text-center`}>
           Customer Careline: 09150391829 | Advert/Marketing: 08028348929
         </h1>
       </div>

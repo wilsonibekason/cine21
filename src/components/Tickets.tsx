@@ -9,7 +9,7 @@ const Tickets = () => {
     <>
       <div className={``}>
         <div>
-          <h3 className={`${styles.cardHeading}`}>tickets prices</h3>
+          <h3 className={`${styles.cardHeading3}`}>tickets prices</h3>
           {/* <div
             className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16  mx-8 lg:mx-24 min-h-[100vh] gap-8`}
           >
@@ -24,7 +24,7 @@ const Tickets = () => {
             </div>
           </div> */}
           <div
-            className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 mt-16  mx-0  lg:mx-12  gap-8`}
+            className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 mt-8  mx-0  lg:-mx-2  gap-8`}
           >
             <TicketCard />
             <TicketCard2 />
