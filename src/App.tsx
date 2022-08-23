@@ -11,7 +11,6 @@ import {
   PostCard,
   CustomeCard,
   CarouselImage,
-  Postss,
 } from "./components";
 import styles from "./styles";
 function App() {
