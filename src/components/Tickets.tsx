@@ -9,7 +9,7 @@ const Tickets = () => {
   return (
     <>
       <div className={``}>
-        <div>
+        <div className="-pl-2">
           <h3 className={`${styles.cardHeading3}`}>tickets prices</h3>
           <div
             className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 mt-8  mx-0  lg:-mx-2  gap-8`}

@@ -103,6 +103,18 @@ export const cineMovies = [
     cast: "Brad Pitt, Joey King, Aaron Taylor- Johnson",
     director: "David Leitch",
   },
+  {
+    img: img8,
+    title: "DC LEAGUE OF SUPER PETS (2022) HOLLYWOOD",
+    description:
+      "When the Justice League are captured by Lex Luthor, Superman’s dog, Krypto, forms a team of shelter-pets who were given super-powers: A hound named Ace, who becomes super-strong, a pig named PB, who can grow to giant-size, a turtle named Merton, who becomes super-fast, and a squirrel named Chip, who gains electric-powers.",
+    showtime: "12:10pm -2:06pm",
+    rating: 18,
+    duration: " 1hr 46mins",
+    genre: " Animation, Action, Adventure",
+    cast: "Dwayne Johnson, Kevin Hart, Keanu Reeves, John Krasinski, Diego Luna",
+    director: "Jared Stern, Sam Levine",
+  },
 ];
 
 export const ticketList1: ITick1[] = [

@@ -43,15 +43,20 @@ function App() {
         {/* <div className={`${styles.boxWidth}`}>
           <Posts />
         </div> */}
-        <div className={`my-12 mx-4 lg:mx-32`}>
+        <div className={`my-12 mx-4 lg:mx-[130px]`}>
           <Tickets />
         </div>
         {/* <div className={`my-4 mx-4 md:mx-16 lg:mx-16 bg_black p-10 rounded-lg`}> */}
-        <div className="my-4 mx-4 md:mx-16 lg:mx-16">
+        <div className="my-4 mx-8 md:mx-16 lg:mx-16">
           <CustomeCard />
         </div>
-        <div className={`${styles.paddingX} bg_black ${styles.flexStart}`}>
+        <div
+          className={`${styles.paddingX}  py-2 bg_black ${styles.flexStart}`}
+        >
           <Footer />
+        </div>
+        <div className={`${styles.boxWidth}`}>
+          <div className="w-full bg-gray-200 p-4" />
         </div>
       </div>
     </>

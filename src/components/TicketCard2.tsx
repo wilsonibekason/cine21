@@ -10,8 +10,8 @@ const TicketCard2 = ({ data, adult, child }) => {
           <div className={`mt-12 `}>
             <h1 className={styles.cardHeading4}>{data}</h1>
             <ul className="list-none w-full flex flex-col mt-4 items-center">
-              <li className={`${styles.cardHeading4} mt-4`}>child: {child}</li>
-              <li className={`${styles.cardHeading4} mt-4`}>adult: {adult}</li>
+              <li className={`${styles.cardHeading5} mt-4`}>child: {child}</li>
+              <li className={`${styles.cardHeading5} mt-4`}>adult: {adult}</li>
             </ul>
           </div>
         </div>

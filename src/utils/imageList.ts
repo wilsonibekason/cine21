@@ -7,7 +7,7 @@ export const images = {
   img6: "https://i0.wp.com/cine21.ng/wp-content/uploads/2022/07/Tigers-Tail-2022-Movie-Poster.jpg?w=720&ssl=1",
   img7: "https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/Thor-love-and-thunder.jpg?resize=691%2C1024&ssl=1",
   img8: "https://i0.wp.com/cine21.ng/wp-content/uploads/2022/07/super-pets.jpg?resize=819%2C1024&ssl=1",
-  img9: "",
+  img9: "https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/beast.jpg?resize=819%2C1024&ssl=1",
   img10: "",
 };
 

@@ -13,6 +13,8 @@ const styles = {
     "font-poppins font-bold xs:text-[20px] text-[20px] blue__txt xs:leading-[30px] leading-[28px] w-full uppercase",
   cardHeading4:
     "font-poppins font-bold xs:text-[20px] text-[20px] text-white xs:leading-[30px] leading-[28px] w-full uppercase",
+  cardHeading5:
+    "font-poppins font-medium xs:text-[20px] text-[20px] text-white xs:leading-[30px] leading-[28px] w-full capitalize",
   BlogHeading1:
     "font-poppins font-medium xs:text-2xl text-2xl text-black xs:leading-[80px] leading-[68px] w-full uppercase",
   CheckoutHeading:

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full flex py-6 justify-between items-center mx-0 lg:mx-16">
-        <p className="text-[10px] lg:text-[12px] font-robotoCondensed w-full">
+        <p className="text-[10px] lg:text-[15px] font-robotoCondensed w-full font-medium text-gray-200 ">
           © 2021 Cine21. All rights reserved.
         </p>
 
