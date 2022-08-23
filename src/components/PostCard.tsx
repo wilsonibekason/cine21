@@ -7,7 +7,7 @@ const PostCard = () => {
     <>
       <div className="relative flex flex-col shadow-lg w-full">
         <img src={beast} alt="img-card" className=" object-cover" />
-        <div className="my-4 w-full mx-4">
+        <div className="my-4 w-full">
           <h2 className={`${styles.cardHeading} `}>Captain America</h2>
           <p className={`${styles.span1} mt-4`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae

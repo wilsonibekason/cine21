@@ -8,6 +8,7 @@ import {
   Tickets,
   HeaderTitle,
   Posts,
+  PostCard,
   CustomeCard,
   CarouselImage,
   Postss,
@@ -26,7 +27,7 @@ function App() {
         {/* <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-60px)]"> */}
         <CarouselImage />
         {/* </div> */}
-        <div className="border-t bg-gray-200 mt-12" />
+        <div className="border-t bg-gray-250 mt-12" />
         <div className={` ${styles.paddingX} min-w-full -my-4`}>
           {/* <div className={`min-w-[100%]`}> */}
           <HeaderTitle />
@@ -34,12 +35,29 @@ function App() {
         </div>
         <div className="border-t bg-white" />
         {/** header */}
-        <div className={`${styles.boxWidth}`}>
+        <h4
+          className={`text-2xl text-white font-robotoMain font-extrabold uppercase text-center mt-3`}
+        >
+          new movies
+        </h4>
+        <div className="flex flex-wrap gap-4 mx-4 lg:mx-28 flex-col lg:flex-row basis-full mt-3">
+          <div className=" text-white h-26 flex-auto w-full lg:w-[25%] ">
+            <PostCard />
+          </div>
+          <div className=" text-white h-26 flex-auto w-full lg:w-[25%] ">
+            <PostCard />
+          </div>
+          <div className=" text-white h-26 flex-auto w-full lg:w-[25%] ">
+            <PostCard />
+          </div>
+        </div>
+        {/* <div className={`${styles.boxWidth}`}>
           <Postss />
-        </div>
-        <div className={`${styles.boxWidth}`}>
+        </div> */}
+
+        {/* <div className={`${styles.boxWidth}`}>
           <Posts />
-        </div>
+        </div> */}
         <div className={`my-8 mx-4 lg:mx-32`}>
           <Tickets />
         </div>

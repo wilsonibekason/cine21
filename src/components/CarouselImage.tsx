@@ -94,6 +94,17 @@ const CarouselImage = () => {
             />
           </div>
         </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-12vh)] ">
+            <div
+              className="absolute top-0  w-full h-full bg-center bg-no-repeat bg-cover"
+              style={{
+                backgroundImage: `url('https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/cold.jpg?resize=798%2C1024&ssl=1')`,
+              }}
+            />
+          </div>
+        </SwiperSlide>
         {/* ... pos: 50% cover black norepeat min100% min100% */}
       </Swiper>
       {/* <Swiper
