@@ -2,7 +2,7 @@ import { beast, cold, superpet } from "../assets";
 import { images } from "./imageList";
 
 const { img1, img10, img2, img3, img4, img5, img6, img7, img8, img9 } = images;
-interface ICineType {
+export interface ICineType {
   img: string;
   title: string;
   description: string;
@@ -13,7 +13,12 @@ interface ICineType {
   cast: string;
   director: string;
 }
-export const cineMovies: any = [
+export interface ITick1 {
+  data: string;
+  child: string;
+  adult: string;
+}
+export const cineMovies = [
   {
     img: img1,
     title: "NOPE (2022) HOLLYWOOD",
@@ -100,21 +105,21 @@ export const cineMovies: any = [
   },
 ];
 
-export const ticketList1 = [
+export const ticketList1: ITick1[] = [
   {
     data: "WEEKDAYS (MON - THURS)",
-    child: "Child N1,000",
-    adult: "Adult N1,500",
+    child: " N1,000",
+    adult: " N1,500",
   },
 ];
-export const ticketList2 = [
+export const ticketList2: ITick1[] = [
   {
     data: "WEEKENDS (FRI - SUN)",
-    child: "Child N1,500",
-    adult: "Adult N2,000",
+    child: " N1,500",
+    adult: " N2,000",
   },
 ];
-export const ticketList3 = [
+export const ticketList3: ITick1[] = [
   {
     data: "Adult N2,000",
     child: "N2,500",
