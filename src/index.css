@@ -44,7 +44,6 @@
 }
 /** palette collection definition*/
 /** black background color**/
-
 .black-bg-color{
   background-color: var(--black-background);
 }
