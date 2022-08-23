@@ -13,7 +13,7 @@ const HeaderLink = () => {
 
         <div className=" justify-end items-center flex flex-row">
           <p
-            className={`text-2xl text-white font-raleway font-medium capitalise `}
+            className={`text-xl lg:text-2xl text-white font-raleway font-medium capitalise `}
           >
             12th August-18th August 2022
           </p>

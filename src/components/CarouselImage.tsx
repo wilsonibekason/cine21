@@ -3,7 +3,14 @@ import { beast, cold } from "../assets";
 import { TodosContextState } from "../state/types";
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  EffectFade,
+  /**SwiperCore */ Autoplay,
+} from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -57,11 +64,17 @@ const CarouselImage = () => {
     setCurrentIndex(count);
     slideRef.current?.classList.add(".fade-anim");
   };
+
+  SwiperCore.use([Autoplay]);
   return (
     <>
       <Swiper
         // install Swiper modules
         modules={[Navigation, EffectFade, Pagination, Scrollbar, A11y]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         spaceBetween={50}
         slidesPerView={1}
         navigation

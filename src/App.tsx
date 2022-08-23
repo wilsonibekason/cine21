@@ -18,11 +18,11 @@ function App() {
   return (
     <>
       <div className="black-bg  overflow-hidden">
-        <div className={`${styles.flexCenter} ${styles.paddingX} black-bg`}>
-          <div className={`${styles.boxWidth}`}>
-            <Header />
-          </div>
+        {/* <div className={`${styles.flexCenter} ${styles.paddingX} black-bg`}> */}
+        <div className={`${styles.boxWidth}`}>
+          <Header />
         </div>
+        {/* </div> */}
 
         {/* <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-60px)]"> */}
         <CarouselImage />

@@ -1,10 +1,11 @@
 import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-12 py-3  mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-0 lg:px-12 py-3  mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             {/* <a
@@ -23,16 +24,11 @@ export default function Header() {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className="fas fa-bars"></i>
+              {/* <i className="fas fa-bars"></i> */}
+              <GiHamburgerMenu size={30} />
             </button>
           </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex " : " hidden")
-            }
-            id="example-navbar-danger"
-          >
+          <div className="hidden lg:flex">
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
               <li className="nav-item">
                 <a
@@ -40,7 +36,7 @@ export default function Header() {
                   href="#pablo"
                 >
                   {/* <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75 "></i> */}
-                  <span className="ml-2 text-xs lg:text-2xl capitalize tracking-wide font-black">
+                  <span className="ml-2 text-xs lg:text-2xl capitalize tracking-wide  font-black">
                     Contact us
                   </span>
                 </a>
@@ -49,6 +45,29 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      <div
+        className={
+          " bg-gray-100 text-black text-start py-1 lg:hidden " +
+          (navbarOpen
+            ? " flex  transition-all ease-out duration-500 "
+            : " hidden")
+        }
+        id="example-navbar-danger "
+      >
+        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
+          <li className="nav-item">
+            <a
+              className="px-3 py-2 flex items-center text-xs uppercase font-bold font-robotoMain leading-snug text-white hover:opacity-75"
+              href="#pablo"
+            >
+              {/* <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75 "></i> */}
+              <span className="ml-2 text-[18px] lg:text-2xl capitalize tracking-wide font-robotoMain text-black font-black leading-4">
+                Contact us
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </>
   );
 }
