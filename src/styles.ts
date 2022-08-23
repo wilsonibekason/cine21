@@ -7,8 +7,7 @@ const styles = {
     "font-poppins font-medium xs:text-[50px] text-[42px] text-white xs:leading-[80px] leading-[68px] w-full uppercase",
   heading3:
     "font-poppins font-medium xs:text-[15px] text-[14px] green__txt xs:leading-[30px] leading-[28px] w-full uppercase",
-  cardHeading:
-    "font-poppins font-bold xs:text-[15px] text-[15px] white__txt xs:leading-[25px] leading-[24px] w-full uppercase",
+  cardHeading: "text-2xl text-white font-robotoMain font-extrabold uppercase",
   cardHeading2:
     "font-poppins font-bold xs:text-[20px] text-[20px] blue__txt xs:leading-[30px] leading-[28px] w-full uppercase",
   BlogHeading1:
@@ -21,6 +20,14 @@ const styles = {
     "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
   paragraph2: "font-poppins font-normal text-black text-sm leading-[30.8px]",
   span1: "text-[12px] text-gray-400 font-semibold font-poppins uppercase",
+  spanPost:
+    "text-xs text-gray-400 font-semibold font-raleway leading-5 tracking-widest",
+  spanPost2:
+    "text-xs text-white font-extrabold font-poppins leading-5 tracking-widest capitalize",
+  spanPost3:
+    "text-xs text-white font-semibold font-poppins leading-5 tracking-widest capitalize",
+  spanPost4:
+    "text-xs text-white font-semibold font-poppins leading-5 tracking-widest uppercase",
   span2: "text-[12px] text-blue-400 font-semibold font-poppins uppercase",
   span3: "text-[12px] text-dimwhite font-semibold font-poppins uppercase",
   flexCenter: "flex justify-center items-center",
