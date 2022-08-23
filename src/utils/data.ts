@@ -13,7 +13,7 @@ interface ICineType {
   cast: string;
   director: string;
 }
-export const cineMovies: ICineType[] = [
+export const cineMovies: any = [
   {
     img: img1,
     title: "NOPE (2022) HOLLYWOOD",
