@@ -113,7 +113,7 @@ const CarouselImage = () => {
             <div
               className="absolute top-0  w-full h-full bg-center bg-no-repeat bg-cover"
               style={{
-                backgroundImage: `url('https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/cold.jpg?resize=798%2C1024&ssl=1')`,
+                backgroundImage: `url('https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/Dragon-ball-scaled.jpg?resize=723%2C1024&ssl=1')`,
               }}
             />
           </div>

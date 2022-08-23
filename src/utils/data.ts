@@ -2,7 +2,18 @@ import { beast, cold, superpet } from "../assets";
 import { images } from "./imageList";
 
 const { img1, img10, img2, img3, img4, img5, img6, img7, img8, img9 } = images;
-export const cineMovie = [
+interface ICineType {
+  img: string;
+  title: string;
+  description: string;
+  showtime: string;
+  rating: string | number;
+  duration: string;
+  genre: string;
+  cast: string;
+  director: string;
+}
+export const cineMovies: ICineType[] = [
   {
     img: img1,
     title: "NOPE (2022) HOLLYWOOD",

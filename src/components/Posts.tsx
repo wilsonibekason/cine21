@@ -1,24 +1,23 @@
 import React from "react";
 import { beast } from "../assets";
 import styles, { layout } from "../styles";
+import { cineMovies } from "../utils/data";
 import PostCard from "./PostCard";
 
 const Posts = () => {
   return (
     <>
-      <div className="">
-        <h4
-          className={`text-2xl text-white font-robotoMain font-extrabold uppercase text-center mt-3`}
-        >
-          new movies
-        </h4>
-      </div>
-      <div
-        className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4  mx-8 lg:mx-24 min-h-[100vh] gap-8`}
+      <h4
+        className={`text-2xl text-white font-robotoMain font-extrabold uppercase text-center mt-3`}
       >
-        <PostCard />
-        <PostCard />
-        <PostCard />
+        new movies
+      </h4>
+      <div className="flex flex-wrap gap-4 mx-4 lg:mx-28 flex-col lg:flex-row basis-full mt-3">
+        {cineMovies.map((cineMovie: any, index: number) => (
+          <div className=" text-white h-26 flex-auto w-full lg:w-[25%] ">
+            <PostCard key={index} {...cineMovie} />
+          </div>
+        ))}
       </div>
     </>
   );
