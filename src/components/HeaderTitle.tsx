@@ -4,16 +4,20 @@ import styles from "../styles";
 const HeaderLink = () => {
   return (
     <>
-      <div className="w-full flex-end lg:flex py-6 justify-end lg:justify-between items-center">
-        <div className="w-full">
-          <p className={`${styles.heading3}`}>Movies Showing </p>
+      <div className=" lg:flex py-6 justify-start lg:justify-between  items-center">
+        <p
+          className={`text-2xl text-white font-robotoMain font-extrabold uppercase`}
+        >
+          Movie showing
+        </p>
+
+        <div className=" justify-end items-center flex flex-row">
+          <p
+            className={`text-2xl text-white font-raleway font-medium capitalise `}
+          >
+            12th August-18th August 2022
+          </p>
         </div>
-        <div className="flex-col items-center">
-          <div className="w-full">
-            <p className={`${styles.heading3}`}>12th August-18th August 2022</p>
-          </div>
-        </div>
-        {/** centered Heading */}
       </div>
     </>
   );

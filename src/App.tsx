@@ -10,12 +10,13 @@ import {
   Posts,
   CustomeCard,
   CarouselImage,
+  Postss,
 } from "./components";
 import styles from "./styles";
 function App() {
   return (
     <>
-      <div className="black-bg w-full overflow-hidden">
+      <div className="black-bg  overflow-hidden">
         <div className={`${styles.flexCenter} ${styles.paddingX} black-bg`}>
           <div className={`${styles.boxWidth}`}>
             <Header />
@@ -25,13 +26,17 @@ function App() {
         {/* <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-60px)]"> */}
         <CarouselImage />
         {/* </div> */}
-
-        <div className={`${styles.flexCenter} ${styles.paddingX}`}>
-          <div className={`${styles.boxWidth}`}>
-            <HeaderTitle />
-          </div>
+        <div className="border-t bg-gray-200 mt-12" />
+        <div className={` ${styles.paddingX} min-w-full -my-4`}>
+          {/* <div className={`min-w-[100%]`}> */}
+          <HeaderTitle />
+          {/* </div> */}
         </div>
+        <div className="border-t bg-white" />
         {/** header */}
+        <div className={`${styles.boxWidth}`}>
+          <Postss />
+        </div>
         <div className={`${styles.boxWidth}`}>
           <Posts />
         </div>
