@@ -1,7 +1,8 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { useNavigate, NavLink } from "react-router-dom";
 export default function Header() {
+  const naviagte = useNavigate();
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -31,15 +32,15 @@ export default function Header() {
           <div className="hidden lg:flex">
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
               <li className="nav-item">
-                <a
+                <NavLink
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold font-robotoMain leading-snug text-white hover:text-yellow-300 hover:border-b-4 hover:border-yellow-300 "
-                  href="#pablo"
+                  to={"/contactus"}
                 >
                   {/* <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75 "></i> */}
                   <span className="ml-2 text-xs lg:text-2xl capitalize tracking-wide  font-black">
                     Contact us
                   </span>
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -56,15 +57,15 @@ export default function Header() {
       >
         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
           <li className="nav-item">
-            <a
+            <NavLink
               className="px-3 py-2 flex items-center text-xs uppercase font-bold font-robotoMain leading-snug text-white hover:opacity-75"
-              href="#pablo"
+              to={"/contactus"}
             >
               {/* <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75 "></i> */}
               <span className="ml-2 text-[18px] lg:text-2xl capitalize tracking-wide font-robotoMain text-black font-black leading-4">
                 Contact us
               </span>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
