@@ -46,7 +46,7 @@ function Home() {
           <Tickets />
         </div>
         {/* <div className={`my-4 mx-4 md:mx-16 lg:mx-16 bg_black p-10 rounded-lg`}> */}
-        <div className="my-4 mx-4 md:mx-16 lg:mx-16">
+        <div className="my-4 mx-0 md:mx-16 lg:mx-16">
           <CustomeCard />
         </div>
         <div
