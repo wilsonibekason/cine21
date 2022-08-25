@@ -13,12 +13,13 @@ const Posts = () => {
     fetchComedyMovies,
     fetchDocumentaries,
     fetchNetflixOriginals,
+    fetchHorrorMovies,
   } = requests;
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     let cancelled = false;
     const fetchData = async () => {
-      const request = await axios.get(fetchNetflixOriginals);
+      const request = await axios.get(fetchComedyMovies);
       const { data } = request;
       console.log("dmtb result: ", data);
       if (data && !cancelled) setMovies(data?.results);
@@ -29,7 +30,7 @@ const Posts = () => {
       console.log("data cancelled");
       cancelled = true;
     };
-  }, [fetchNetflixOriginals]);
+  }, [fetchComedyMovies]);
 
   console.table(movies);
   /**

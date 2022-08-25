@@ -120,47 +120,6 @@ const CarouselImage = () => {
         </SwiperSlide>
         {/* ... pos: 50% cover black norepeat min100% min100% */}
       </Swiper>
-      {/* <Swiper
-        // className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-60px)]"
-        modules={[Navigation, EffectFade]}
-        speed={800}
-        slidesPerView={1}
-        effect={"fade"}
-        navigation
-        loop
-      >
-        <SwiperSlide
-        // className="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover"
-        // style={{
-        //   // backgroundImage: `url('${carouselAsset[currentIndex]}')`,
-        //   backgroundImage: `url('https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/nope-official.jpg?resize=1024%2C706&ssl=1')`,
-        // }}
-        >
-          {" "}
-          <div
-            className="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover"
-            style={{
-              backgroundImage: `url('https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/nope-official.jpg?resize=1024%2C706&ssl=1')`,
-            }}
-            ref={slideRef}
-          />
-          <SwiperSlide>
-            <img
-              src="https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/Stranger.jpg?resize=691%2C1024&ssl=1"
-              alt=""
-              className="w-full h-full bg-cover"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://i0.wp.com/cine21.ng/wp-content/uploads/2022/08/Stranger.jpg?resize=691%2C1024&ssl=1"
-              alt=""
-              className="w-full h-full bg-cover"
-            />
-          </SwiperSlide>
-        
-        </SwiperSlide>
-      </Swiper> */}
     </>
   );
 };
